@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Calon Pegawai</title>
+</head>
+<body>
+ 
+    <form action="submission.html" method="POST">
+      <fieldset>
+        <legend><span></b>Formulir Calon Pegawai</b></span></legend>
+        <section class="data individu">
+            <label for="nama"> <b>Nama : </b></label>
+            <input id="nama" type="text" name="nama" minlength="3" maxlength="30" pattern="[a-zA-z]+" required>
+            <br><br>
+
+            <label for="alamat"><b>Alamat : </b></label>
+            <input id="alamat" type="text" name="alamat" minlength="3" maxlength="100" required>
+            <br><br>
+
+            <label for="password"><b>Password :</b></label>
+            <input id="password" type="password" minlength="8" maxlength="15" required> <br><br>
+        </section>
+    
+        <section class="Jenis Kelamin">
+            <label for="JK"> <b>Jenis Kelamin : </b></label>
+            <input type="radio" name="JK" id="laki-laki" value="laki-laki" checked>
+            <label for="laki-laki"><b>Laki - laki</b></label>
+            <input type="radio" name="JK" id="perempuan" value="perempuan">
+            <label for="perempuan"><b>Perempuan</b></label>
+          </section>
+          <br>
+          <section class="bahasa pemrograman">
+              <span><b>Bahasa Pemrograman yang dikuasai : </b></span>
+                <input type="checkbox" name="bahasa pemrograman" id="Web" value="web">
+                <label for="web"><b>Web</b></label>
+                <input type="checkbox" name="bahasa pemrograman" id="mobile" value="mobile">
+                <label for="mobile"><b>MOBILE</b></label>
+                <input type="checkbox" name="bahasa Pemrograman" id="desktop" value="desktop">
+                <label for="desktop"><b>DESKTOP</b></label>
+          </section>
+          <br>
+          <section class="kota asal">
+            <label for="kota asal"><b>Kota Asal :</b></label>
+            <select name="kota asal" id="kota asal" size="1">
+              <option value="Manado"><b>Manado</b></option>
+              <option value="semarang" selected="selected"><b>Semarang</b></option>
+              <option value="Minahasa"><b>Minahasa</b></option>
+            </select>
+          </section>
+          <br>
+          <section class="Reason">
+            <span><b>Apa yang Membuat Kami Harus memilih Anda?:</b></span><br>
+            <textarea name="Reason" id="Reason" cols="85" rows="10" placeholder="Tulis jawaban Anda di sini"></textarea>
+          </section>
+          <br>
+          <button>Proses</button>
+        </fieldset>
+    </form>
+  
+    
+</body>
+</html>
